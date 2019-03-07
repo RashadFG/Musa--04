@@ -1,0 +1,17 @@
+#logo{
+	.container{
+		.row{
+			.col{
+				img{
+					height: 140px;
+					transform: scale(1);
+					transition:all .5s ease;
+					&:hover{
+						transform:scale(1.1);
+					}
+				}
+			}
+
+		}
+	}
+}

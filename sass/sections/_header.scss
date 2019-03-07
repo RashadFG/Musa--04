@@ -1,0 +1,38 @@
+ header{
+ 	font-family: $font-family1;
+ 	position: absolute;
+ 	width: 100%;
+
+ 	.container{
+ 		.row{
+ 		
+ 			height: 94px;
+ 			.col-lg-5{
+ 				font-size: 30px;
+ 				font-weight: 600;
+ 				cursor: pointer;
+ 				span{
+ 					color:#00c9b1;
+ 				}
+ 			}
+ 		
+
+ 			nav{
+ 				ul{
+ 					list-style-type: none;
+ 					li{
+ 						a{
+ 							font-weight: 400;
+ 							font-size: 15px;
+ 							color:#818181;
+ 							transition: all .5s ease;
+ 							&:hover{
+ 								color:#00c9b1;
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }

@@ -1,0 +1,84 @@
+#Our-experts{
+	.container{
+		.row{
+			@extend .heading;
+		}
+		.row{
+			.col-lg-3{
+				.images{
+					position: relative;
+					z-index: 1;
+					overflow: hidden;
+					.over-flay{
+						opacity:0;
+						width: 0%;
+						height: 0%;
+						position: absolute;
+						z-index: 2;
+						background: rgba(0,0,0, 0.6);
+						transition:all .5s ease;
+					}
+					.col-12{
+						position: absolute;
+						top:45%;
+						z-index: 3;
+						transition:all .5s ease;
+						a{
+							border:2px solid white;
+							color:white;
+							transition:all .3s;
+							opacity: 0;
+							border:1px solid white;
+							transition:all .5s ease;
+							&:hover{
+								border:1px solid $colorBlue;
+								opacity: 1;
+								background: $colorBlue;
+								border:2px solid $colorBlue;
+							}
+						}
+					}
+					&::after{
+						content: "";
+						width: 100%;
+						height: 60%;
+						background: white;
+						transform: skewX(99deg);
+						position:absolute;
+						z-index: 4;
+						bottom:-31%;
+						transition:all .5s ease;
+						&:hover{
+							transform: skewX(90deg);
+						}
+					}
+				}
+				.letter{
+					p{
+						color:$colorBlue;
+					}
+					border-bottom:2px solid $colorBlue;
+				}
+				&:hover{
+					.images{
+						.over-flay{
+							opacity: 1;
+							width: 100%;
+							height: 100%;
+						}
+						.col-12{
+							a{
+								opacity: 1;
+
+							}
+						}
+						&::after{
+							content: "";
+							transform: skewX(91deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}

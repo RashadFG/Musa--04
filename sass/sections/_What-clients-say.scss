@@ -1,0 +1,19 @@
+#What-clients-say{
+	background: #F6F6F6;
+	.container{
+	margin-bottom: 5%;
+		.row{
+			@extend .heading;
+		}
+		.row{
+			p{
+				font-size: 14px;
+				font-weight: 300;
+			}
+			h5{
+				color:$colorBlue;
+			}
+		}
+	}
+}
+

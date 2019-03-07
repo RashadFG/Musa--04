@@ -1,0 +1,66 @@
+#What-we-do{
+	.container{
+		.row{
+			@extend .heading
+		}
+		.row{
+			.col-lg-4:first-child{
+				.col-12{
+					position: relative;
+					transition: all 0.5s ease;
+					box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);					h3{
+						font-weight: 400;
+						font-size: 40px;
+					}
+					i{
+						position: relative;
+						left: 43%;
+						height: 50px;
+						width: 50px;
+						color:$colorBlue;
+					}
+					&:hover{
+						box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+						transition: all 0.5s ease;
+					}
+				}
+			} 
+			.col-lg-4{
+				position: relative;
+				top: 0;
+				transition: all 0.4s ease;
+				
+				.col-12{
+					position: relative;
+					transition: all 0.5s ease;
+					box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);	
+					h3{
+						font-weight: 400;
+						font-size: 40px;
+					}
+					i{
+						font-size: 30px;
+						height: 50px;
+						width: 50px;
+						color:$colorBlue;
+						position: relative;
+						top: 0;
+						transition: all 0.5s ease;
+
+					}
+				}
+				&:hover{
+					
+					top: -10px;
+					.col-12{
+						box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+					}
+					i{
+						top: -10px;
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,63 @@
+#Latest-post{
+	.container{
+		.row{
+			@extend .heading;
+			.col-lg-4{
+				.item{
+					box-shadow: 0 1px 4px rgba(0,0,0,.15);
+					p{
+						color:#626262;
+						font-size: 14px;
+					}
+					i{
+						color:$colorBlue;
+					}
+					span{
+						font-size: 14px;
+						cursor:pointer;
+						&:hover{
+							color:$colorBlue;
+						}
+					}
+					a{
+						font-size: 12px;
+						text-decoration:none;
+						color:black;
+						position: relative;
+						&::before{
+							content:"";
+							position: absolute;
+							width: 30px;
+							height: 1px;
+							top: 90%;
+							left: -10%;
+							border-bottom:1px solid $colorBlue;
+							opacity: 0;
+							transition:all .3s ease;
+						}
+						&:hover{
+							color:$colorBlue;
+							&::before{
+								left: 0%;
+								opacity: 1;
+							}
+						}
+					}
+				}
+				&:hover{
+					.item{
+						box-shadow: 0 1px 14px rgba(0,0,0,.19); 
+						i{
+							span{
+								color:$colorBlue;
+							}
+						}
+					}
+
+				}
+				
+			}
+
+		}
+	}
+}

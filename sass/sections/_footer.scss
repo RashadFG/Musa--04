@@ -1,0 +1,44 @@
+#footer{
+	.container{
+		.row{
+			.col-lg-4{
+				span{
+					color:$colorBlue;
+				}
+			}
+			.col-lg-5{
+				nav{
+					ul{
+						li{
+							a{
+								color:black;
+								&:hover{
+									color: $colorBlue;
+								}
+
+							}
+						}
+					}
+				}
+			}
+			.col-lg-3{
+				.col-12{
+
+					a{
+						border:2px solid black;
+						color:black;
+						transition:all .3s;
+						&:hover{
+							background: $colorBlue;
+							color:black;
+							border:2px solid $colorBlue;
+
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,34 @@
+#Our-contacts-adress{
+	.container-fluid{
+		border-bottom:0.25px solid #818181;
+		.container{
+			padding:5% 0%;
+			.row{
+				.col-md-4{
+					i{
+						color:$colorBlue;
+					}
+				}
+				.col-md-8{
+					input{
+						outline: 0;
+						width: 100%;
+						&:focus{
+							outline:1px solid $colorBlue;
+						}
+					}
+					textarea{
+						width: 100%;
+						outline: 0;
+						&:focus{
+							outline:1px solid $colorBlue;
+						}
+					}
+					button{
+						@extend .button;
+					}
+				}
+			}
+		}
+	}
+}
